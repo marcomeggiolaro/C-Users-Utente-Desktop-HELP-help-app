@@ -34,7 +34,7 @@ function getTimeOfDay(): TimeOfDay {
 
 // ─── Actions ─────────────────────────────────────────────────────────────────
 
-type Action =
+export type Action =
   | { type: 'SET_USER_NAME'; payload: string }
   | { type: 'SET_BREAKFAST_TIME'; payload: string }
   | { type: 'COMPLETE_ONBOARDING' }
