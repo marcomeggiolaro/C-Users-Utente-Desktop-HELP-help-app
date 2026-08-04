@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/*
+ * HELP! Design System — Token Layer v1.0
+ * NOTA: Palette PLACEHOLDER — da aggiornare con Brand Guidelines ufficiali.
+ * Tutte le variabili sono centralizzate qui. Nessun colore hardcoded altrove.
+ */
+
+@theme {
+  /* Palette primaria — warm, friendly (PLACEHOLDER) */
+  --color-primary: #F97316;
+  --color-primary-hover: #EA6C0A;
+  --color-primary-light: #FED7AA;
+  --color-primary-ultralight: #FFF7ED;
+
+  /* Accento — mint/green per azioni positive */
+  --color-accent: #10B981;
+  --color-accent-light: #D1FAE5;
+
+  /* Background */
+  --color-bg: #FFFBF5;
+  --color-bg-card: #FFFFFF;
+  --color-bg-surface: #FEF3C7;
+
+  /* Testo */
+  --color-text: #1C1917;
+  --color-text-secondary: #78716C;
+  --color-text-muted: #A8A29E;
+
+  /* Bordi */
+  --color-border: #E7E5E4;
+  --color-border-light: #F5F5F4;
+
+  /* Feedback */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+
+  /* Font */
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* ─── Layout tokens (non-Tailwind) ─── */
+:root {
+  --nav-height: 64px;
+  --pino-scene-height: 260px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --shadow-card: 0 2px 8px rgba(28, 25, 23, 0.07);
+  --shadow-lg: 0 8px 24px rgba(28, 25, 23, 0.10);
+}
+
+/* ─── Base ─── */
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #FFFBF5;
+  color: #1C1917;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+/* Contenitore principale scrollabile — gestisce safe area iOS */
+#app-root {
+  min-height: 100%;
+  padding-bottom: calc(var(--nav-height) + var(--safe-bottom));
+}
