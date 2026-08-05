@@ -1,0 +1,17 @@
+{
+  "name": "HELP!",
+  "short_name": "HELP!",
+  "description": "Il tuo assistente alimentare personale.",
+  "start_url": "/home",
+  "display": "standalone",
+  "background_color": "#FFFBF5",
+  "theme_color": "#FFFBF5",
+  "icons": [
+    {
+      "src": "/logo-HELP.jpeg",
+      "sizes": "any",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

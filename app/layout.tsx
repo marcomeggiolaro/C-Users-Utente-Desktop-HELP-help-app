@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'HELP!',
   description: 'Il tuo assistente alimentare personale.',
   manifest: '/manifest.json',
+  icons: {
+    icon: '/logo-HELP.jpeg',
+    apple: '/logo-HELP.jpeg',
+  },
 }
 
 export const viewport: Viewport = {

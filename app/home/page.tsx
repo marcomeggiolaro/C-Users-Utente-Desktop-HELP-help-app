@@ -1,6 +1,7 @@
 ﻿'use client'
 
 import { useState, useEffect, useCallback } from 'react'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/navigation'
 import { useAppState, useAppDispatch } from '@/lib/store'
@@ -175,6 +176,11 @@ export default function HomePage() {
           className="absolute bottom-0 left-0 right-0 h-28 pointer-events-none"
           style={{ background: 'linear-gradient(to bottom, transparent, var(--color-bg))' }}
         />
+
+        {/* Logo HELP — angolo in alto a sinistra */}
+        <div className="absolute top-4 left-4 z-10">
+          <Image src="/logo-HELP.jpeg" alt="HELP" width={90} height={36} className="object-contain rounded-lg" style={{ filter: 'drop-shadow(0 1px 4px rgba(0,0,0,0.18))' }} />
+        </div>
 
         {/* Z2: Pino — presente, non entra in scena (Principio 5) */}
         <div className="absolute inset-0 flex items-end justify-center">
